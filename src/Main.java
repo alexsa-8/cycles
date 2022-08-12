@@ -6,16 +6,16 @@ public class Main {
         // Задание 1
         System.out.println("\nЗадание 1");
         int i=0;
-        while (i<=9){             // while (i<10) {
-            i++;                  // не надо
-            System.out.print(i);  //   System.out.print(++i + " ");
-        }                         // }
-        System.out.print("\n");   // System.out.println();
+        while (i<=9){
+            i++;
+            System.out.print(i);
+        }
+        System.out.print("\n");
 
-        for (;i>=1;){             // for (;i>0;i--){
-            System.out.print(i);  //   System.out.print(i+ " ");
-            i--;                  // не надо
-        }                         // }
+        for (;i>=1;){
+            System.out.print(i);
+            i--;
+        }
 
         // Задание 2
         System.out.println("\nЗадание 2");
@@ -36,6 +36,39 @@ public class Main {
             if (year%79==0){
                 System.out.println(year);
             }
+        }
+
+
+        // Задание 4
+        System.out.println("\nЗадание 4");
+        int numbers;
+        for (numbers=1; numbers<=30; numbers++) {
+            System.out.print(numbers+ ": ");
+            if (numbers%3==0 && numbers%5==0){
+                System.out.println("ping pong");
+            } else if (numbers%3==0){
+                System.out.println("ping");
+            } else if (numbers%5==0){
+                System.out.println("pong");
+            } else {
+                System.out.println();
+            }
+
+
+
+        }
+
+
+        // Задание 5
+        System.out.println("\nЗадание 5");
+        int a=0;
+        int b=1;
+        int c;
+        for (; a<50; ) {
+            System.out.print(a+ " ");
+            c=a+b;
+            a=b;
+            b=c;
         }
     }
 }
